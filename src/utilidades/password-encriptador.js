@@ -1,0 +1,1 @@
+// Pr+oximamente se implementara la encriptacion de contraseñas con bcrypt, pero por ahora se hace una comparacion directa.
