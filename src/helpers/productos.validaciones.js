@@ -2,10 +2,10 @@ const CAMPOS_PERMITIDOS = ['nombre', 'precio', 'descripcion', 'categoria', 'stoc
 // Este archico debererría estar en src/midlewares/productos.validaciones.js, pero lo dejo en helpers para no complicar la estructura de carpetas    
 export const validarId = (id) => {
     const idParseado = Number(id);
-    if (!Number.isInteger(idParseado) || isNaN(idParseado) || idParseado <= 0) { return false;};
+    //if (!Number.isInteger(idParseado) || isNaN(idParseado) || idParseado <= 0) { return false;};
     // return idParseado; <- Firebase no trabaja con id numéricos, por lo que se retorna el id original en string
     return id
-};
+};S
 
 export const contieneCamposPermitidos = (datos) => {
     if (Object.keys(datos).length === 0) return false;
