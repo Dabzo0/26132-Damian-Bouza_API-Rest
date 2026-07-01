@@ -3,6 +3,6 @@ import { postLoginUsuario } from '../controladores/usuarios.controladores.js';
 
 const router = express.Router();
 
-router.post('/login', postLoginUsuario);
+router.get('/login', postLoginUsuario);
 
 export default router
