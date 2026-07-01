@@ -29,7 +29,7 @@ app.use((req, res, next) => {
 
 app.use('/auth', usuariosRutas);
 
-app.use('/api/productos', productosRutas);
+app.use('/api/products', productosRutas);
 
 app.use((req,res,next)=>{
     res.status(404);
