@@ -3,7 +3,8 @@ const CAMPOS_PERMITIDOS = ['nombre', 'precio', 'descripcion', 'categoria', 'stoc
 export const validarId = (id) => {
     const idParseado = Number(id);
     if (!Number.isInteger(idParseado) || isNaN(idParseado) || idParseado <= 0) { return false;};
-    return idParseado;
+    // return idParseado; <- Firebase no trabaja con id numéricos, por lo que se retorna el id original en string
+    return id
 };
 
 export const contieneCamposPermitidos = (datos) => {
