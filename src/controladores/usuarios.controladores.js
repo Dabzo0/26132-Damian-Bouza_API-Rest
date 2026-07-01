@@ -2,6 +2,8 @@ import { iniciarSesion } from "../servicios/usuarios.servicios.js";
 
 export const postLoginUsuario = async (req, res) => {
     try {
+        if (Object.keys(req.body).length === 0) return res.status(400).json({ error: 'Faltan datos requeridos. "email" y "password" son obligatorios.' });
+        
         const { email, password } = req.body;
 
         if (!email || !password) return res.status(400).json({ error: 'Faltan datos requeridos. "email" y "password" son obligatorios.' });
