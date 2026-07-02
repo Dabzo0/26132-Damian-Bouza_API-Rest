@@ -1,4 +1,4 @@
-import { listarProductos, buscarProductoPorId, agregarProducto, modificarProducto, borrarProducto, restaurarProducto } from '../servicios/productos.servicios.js';
+import { listarProductos, buscarProductoPorId, agregarProducto, modificarProducto, borrarProducto, restaurarProducto, buscarProductosPorFiltro } from '../servicios/productos.servicios.js';
 import { validarId, contieneCamposPermitidos, parsearFiltros }from '../helpers/productos.validaciones.js'
 
 export const getProductos = async (req, res) => {
