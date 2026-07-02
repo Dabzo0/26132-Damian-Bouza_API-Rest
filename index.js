@@ -12,7 +12,7 @@ const corsOptions = {
     // Dominios permitidos
     origin: [`http://localhost:${PORT}`],
     // Métodos HTTP permitidos
-    methods: ['GET', 'POST', 'PUT', 'DELETE'],
+    methods: ['GET', 'POST', 'PUT', 'DELETE', 'PATCH'],
     // Encabezados permitidos
     allowedHeaders: ['Content-Type', 'Authorization'],
     credentials: true

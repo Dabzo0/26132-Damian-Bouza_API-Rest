@@ -19,3 +19,7 @@ Rutas disponibles para gestión de PRODUCTOS:
 Rutas disponibles para gestión de USUARIOS :
 
     POST /auth/login recibe las credenciales de usuario en el cuerpo (body) de la petición y devuelve el Bearer token si son válidas o un error de autenticación en caso contrario.
+
+Datos de usuario {"nombre": "Usuario de prueba", "email": "admin@gmail.com", "password": "123456"}
+
+Claves válidas para Productos: ['nombre', 'precio', 'descripcion', 'categoria', 'stock', 'estado','imagen']
